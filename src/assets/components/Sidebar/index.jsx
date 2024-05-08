@@ -4,12 +4,12 @@ import { FaReact } from "react-icons/fa";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import Initials from '../../images/initials.png'
 function Sidebar() {
     return(
         <div className='nav-bar'>
             <Link className='logo' to='/'>
-                <FaReact className='icon'/>
-                <p>Sammy</p>
+                <img src={Initials} alt='SY.'/>
             </Link>
             <nav>
                 <NavLink exact="true" activeclassname="active" to="/">

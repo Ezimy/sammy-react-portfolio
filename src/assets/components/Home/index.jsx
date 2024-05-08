@@ -17,24 +17,11 @@ function Home(){
                             .changeDelay(50)
                             .typeString("Hi, <br/> I'm Sammy Yang<br/> A Web Developer")
                             .start()
-                            .callFunction((state)=>{
-                                state.elements.cursor.style.animation='none'
-                                state.elements.cursor.style.display='none'
-                            })
                         }}
                     />
                 </h1>
                 <h2>
-                    <Typewriter
-                        onInit={(typewriter) => {
-                        typewriter
-                            .pauseFor(3000)
-                            .changeDelay(40)
-                            .typeString("Frontend Developer/React.js Expert/ JavaScript Expert")
-                            .start();
-                        }
-                    }
-                    />
+                    Frontend Developer/React.js Expert/ JavaScript Expert
                 </h2>
                 <div>
                     <Link to="/contact" className='flat-button'>CONTACT ME</Link>

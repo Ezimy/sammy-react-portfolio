@@ -22,7 +22,7 @@ function Sidebar() {
                     <FontAwesomeIcon icon={faEnvelope} color='#224870'/>
                 </NavLink>
             </nav>
-            <ul className='socials'>
+            {/* <ul className='socials'>
                 <li>
                     <a 
                     href='https://www.linkedin.com/in/sammy-yang29/'
@@ -50,7 +50,7 @@ function Sidebar() {
                         <FontAwesomeIcon icon={faYoutube} color='#224870'/>
                     </a>
                 </li>
-            </ul>
+            </ul> */}
         </div>
     )
 }

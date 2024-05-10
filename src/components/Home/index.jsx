@@ -14,6 +14,7 @@ function Home(){
                         loop={false}
                         onInit={(typewriter) => {
                         typewriter
+                            .pauseFor(1000)
                             .changeDelay(50)
                             .typeString("Hi, <br/> I'm Sammy Yang<br/> A Web Developer")
                             .start()

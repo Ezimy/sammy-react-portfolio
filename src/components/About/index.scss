@@ -1,0 +1,98 @@
+// .container.about-page
+// {
+//     display: flex;
+//     flex-direction: column;
+//     .text-zone{
+//         margin: 4rem;
+//         height: fit-content;
+//         width: 50%;
+//     h1 {
+//       padding: 1rem;
+//       font-size: 53px;
+//       font-family: 'Cascadia Code';
+//       line-height: normal;
+//       color: #4ea5d9;
+//       font-weight: 400;
+//       position: relative;
+//       margin-bottom: 40px;
+
+//       &:before {
+//         content: '<h1>';
+//         font-family: 'Cascadia Code Italic';
+//         color: #44cfcb;
+//         font-size: 18px;
+//         position: absolute;
+//         margin-top: -10px;
+//         left: -10px;
+//         opacity: 0.6;
+//         line-height: 18px;
+//       }
+
+//       &:after {
+//         content: '<h1/>';
+//         font-family: 'Cascadia Code Italic';
+//         color: #44cfcb;
+//         font-size: 18px;
+//         line-height: 18px;
+//         position: absolute;
+//         left: -30px;
+//         bottom: -20px;
+//         margin-left: 20px;
+//         opacity: 0.6;
+//       }
+//     }
+
+//     p {
+//       font-size: 1.5rem;
+//       color: #fff;
+//       font-family: 'Cascadia Code';
+//       font-weight: 300;
+//       max-width: fit-content;
+//     }
+//     }
+// }
+.container.about-page{
+    .text-zone{
+        position: absolute;
+        left: 10%;
+        top: 40%;
+        transform: translateY(-50%);
+        width: 40%;
+        max-height: 90%;
+        h1{
+            line-height: normal;
+            font-size: 53px;
+            color: #44cfcb;
+            margin: 0 0 0 40px;
+            font-family: 'Cascadia Code';
+            font-weight: 400;
+            &::before{
+                content: '<h1>';
+                font-family: 'Cascadia Code Italic';
+                color: #44cfcb;
+                font-size: 18px;
+                margin-left: -40px;
+                opacity: 0.6;
+            }
+            &::after{
+                content: '</h1>';
+                font-family: 'Cascadia Code Italic';
+                color: #44cfcb;
+                font-size: 18px;
+                margin-left: -40px;
+                opacity: 0.6;
+            }
+        }
+
+        p{
+            display: block;
+            margin-top: 20px;
+            font-weight: 400;
+            font-size: 16px;
+            font-family: 'sans-serif';
+            color: #4ea5d9;
+            animation: fadeIn 1s 2s backwards;
+        }
+    }
+
+}

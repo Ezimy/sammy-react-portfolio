@@ -1,5 +1,6 @@
 import './index.scss';
 import Navbar from '../Navbar'
+import Footer from '../Footer';
 import { Outlet } from 'react-router-dom';
 function Layout(){
     return(
@@ -8,6 +9,8 @@ function Layout(){
             <div className='page'>
                 <Outlet/>
             </div>
+            <Footer/>
+
         </>
     )
 }

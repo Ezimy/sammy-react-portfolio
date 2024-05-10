@@ -1,6 +1,5 @@
 import './index.scss';
-import logo from '../../../images/logo.png';
-import illustration from '../../../images/illustration.svg'
+import illustration from '../../../assets/images/illustration.svg'
 
 function Logo(){
     return(

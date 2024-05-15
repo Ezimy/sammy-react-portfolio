@@ -1,0 +1,90 @@
+.container.contact-page{
+    align-items: center;
+    padding: 2rem;
+    .text-zone{
+    h1{
+        font-size: 53px;
+        color: #44cfcb;
+        font-family: 'Cascadia Code';
+        font-weight: 400;
+    }
+    p{
+        width: 50%;
+        display: block;
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 16px;
+        font-family: 'sans-serif';
+        color: #4ea5d9;
+        animation: fadeIn 1s 2s backwards;
+    }
+    .contact-form {
+        width: 100%;
+        margin-top: 2rem;
+      
+        ul {
+          padding: 0;
+          margin: 0;
+      
+          li {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            margin-bottom: 1rem;
+            opacity: 0;
+            overflow: hidden;
+            display: block;
+            animation: fadeIn 2s 2s;
+            animation-fill-mode: forwards;
+          }
+          .name-email{
+            display: flex;
+            gap: 1rem;
+            .half{
+                width: 50%;
+            }
+          }
+        }
+      
+        input[type='text'],
+        input[type='email'] {
+          width: 100%;
+          border: 0;
+          background: #115173;
+          height: 50px;
+          font-size: 16px;
+          color: #fff;
+          padding: 0 20px;
+          box-sizing: border-box;
+        }
+      
+        textarea {
+          width: 100%;
+          border: 0;
+          background: #115173;
+          height: 50px;
+          font-size: 16px;
+          color: #fff;
+          padding: 20px;
+          box-sizing: border-box;
+          min-height: 150px;
+        }
+      
+        .flat-button {
+          color: #44cfcb;
+          font-size: 11px;
+          letter-spacing: 3px;
+          text-decoration: none;
+          padding: 8px 10px;
+          border: 1px solid #44cfcb;
+          float: left;
+          border-radius: 4px;
+          background: 0 0;
+          text-transform: uppercase;
+          float: right;
+          text-align: center;
+          margin-right: 10px;
+        }
+      }
+    }
+}

@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import './index.scss'
 import Typewriter from "typewriter-effect"
 import Logo from './Logo'
+import Loader from 'react-loaders';
 function Home(){
 
     return(
@@ -14,7 +15,7 @@ function Home(){
                         loop={false}
                         onInit={(typewriter) => {
                         typewriter
-                            .pauseFor(1000)
+                            .pauseFor(2000)
                             .changeDelay(50)
                             .typeString("Hi, <br/> I'm Sammy Yang<br/> A Web Developer")
                             .start()
@@ -32,6 +33,7 @@ function Home(){
                 <Logo/>
             </div>
         </div>
+        <Loader type='cube-transition'/>
         </>
     );
 }

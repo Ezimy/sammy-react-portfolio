@@ -1,7 +1,7 @@
-$primary-color: #ffd700;
+$primary-color: #44cfcb;
 
 @import 'animate.css';
-@import 'loaders.css/src/animations/line-scale-pulse-out.scss';
+@import 'loaders.css/src/animations/cube-transition.scss';
 
 @font-face {
   font-family: 'Cascadia Code';
@@ -25,17 +25,15 @@ textarea {
 .loader-hidden {
   display: none;
 }
-
 .loader-active {
-  display: block;
   position: absolute;
   left: 0;
   right: 0;
-  margin: auto;
   top: 0;
   bottom: 0;
-  width: 50px;
-  height: 50px;
-  animation: fadeOut 1s 1s;
-  animation-fill-mode: forwards;
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  display: block;
+  animation: fadeOut 1s 1s forwards;
 }

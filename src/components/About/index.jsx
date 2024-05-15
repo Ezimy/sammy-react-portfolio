@@ -1,3 +1,4 @@
+import Loader from 'react-loaders';
 import './index.scss'
 import Typewriter from "typewriter-effect"
 function About(){
@@ -10,7 +11,7 @@ function About(){
                             loop={false}
                             onInit={(typewriter) => {
                             typewriter
-                                .pauseFor(1000)
+                                .pauseFor(2000)
                                 .changeDelay(50)
                                 .typeString("About Me")
                                 .start()
@@ -28,6 +29,7 @@ function About(){
                 </p>
             </div>
         </div>
+        <Loader type='cube-transition'/>
         </>
     )
 }
